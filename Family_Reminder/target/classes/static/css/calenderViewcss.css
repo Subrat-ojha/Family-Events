@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* General Calendar Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Calendar Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #4285f4;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
+
+/* Calendar-specific styling */
+.calendar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.month-navigator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.month-navigator button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.month-navigator button:hover {
+    background-color: #3367d6;
+}
+
+.current-month {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Event styling */
+.event-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.event-date {
+    color: #666;
+}
